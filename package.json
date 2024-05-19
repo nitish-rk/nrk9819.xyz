@@ -1,0 +1,22 @@
+{
+  "scripts": {
+    "watch:css": "node scripts/bundle-css.mjs --watch",
+    "build:css": "node scripts/bundle-css.mjs",
+    "start": "enhance dev & npm run watch:tokens & npm run watch:css",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.7.3",
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@enhance/cli": "^1.2.0",
+    "browserslist": "^4.23.0",
+    "chokidar": "^3.6.0",
+    "husky": "^9.0.11",
+    "lightningcss": "^1.25.0",
+    "prettier": "^3.2.5"
+  },
+  "dependencies": {
+    "@enhance/arc-plugin-enhance": "^11.0.1"
+  }
+}

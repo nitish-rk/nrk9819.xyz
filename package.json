@@ -2,7 +2,7 @@
   "scripts": {
     "watch:css": "node scripts/bundle-css.mjs --watch",
     "build:css": "node scripts/bundle-css.mjs",
-    "start": "enhance dev & npm run watch:tokens & npm run watch:css",
+    "start": "enhance dev & npm run watch:css",
     "prepare": "husky"
   },
   "devDependencies": {

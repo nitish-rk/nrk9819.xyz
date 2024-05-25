@@ -20,3 +20,9 @@ body {
     color: light-dark(var(--color-gray-900), var(--color-gray-200));
   }
 }
+
+@media (max-width: 576px) {
+  body {
+    padding: 0 var(--space-8);
+  }
+}

@@ -108,10 +108,9 @@
   --space-180: 180px;
   --box-shadow-default: inset 0 0 0 1px
       light-dark(var(--color-white), var(--color-gray-800)),
-    inset 0 4px 4px 0 light-dark(oklch(0% 0 0 / 5%), oklch(0% 0 0 / 18%)),
-    inset 0 -14px 40px -20px
-      light-dark(oklch(0% 0 0 / 12%), oklch(0% 0 0 / 20%)),
-    0 0 3px 0 light-dark(oklch(0% 0 0 / 12%), oklch(0% 0 0 / 40%));
+    inset 0 4px 4px 0 light-dark(oklch(0% 0 0 / 5%), oklch(0% 0 0 / 16%)),
+    inset 0 -2px 8px light-dark(oklch(0% 0 0 / 8%), oklch(0% 0 0 / 30%)),
+    0 2px 3px 0 light-dark(oklch(0% 0 0 / 12%), oklch(0% 0 0 / 22%));
   --box-shadow-floating: inset 0 0 0 1px
       light-dark(oklch(100% 0 0), oklch(100% 0 0 / 8%)),
     0 0 0 1px light-dark(oklch(0% 0 0 / 8%), oklch(0% 0 0 / 40%)),

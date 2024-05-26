@@ -3,6 +3,8 @@ site-header {
     oklch(from var(--color-gray-50) l c h / 80%),
     oklch(from var(--color-gray-800) l c h / 80%)
   );
+  position: relative;
+  z-index: 100;
 
   header {
     display: flex;
@@ -232,5 +234,11 @@ site-header {
         right: -8px;
       }
     }
+  }
+}
+
+@supports not (background-color: oklch(from #fff l c h / 80%)) {
+  site-header {
+    --color-header-bg: light-dark(var(--color-gray-50), var(--color-gray-800));
   }
 }

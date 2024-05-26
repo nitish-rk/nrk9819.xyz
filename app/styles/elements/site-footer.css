@@ -1,0 +1,220 @@
+@import "./button/cta.css";
+
+site-footer {
+  --color-footer-bg: light-dark(
+    oklch(from var(--color-gray-50) l c h / 80%),
+    oklch(from var(--color-gray-800) l c h / 80%)
+  );
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--space-48);
+    background-color: var(--color-footer-bg);
+    box-shadow: var(--box-shadow-default);
+    border: 1px solid light-dark(var(--color-gray-200), var(--color-gray-900));
+    border-radius: var(--border-radius-24);
+    overflow: hidden;
+  }
+
+  .top {
+    padding: var(--space-80) var(--space-40);
+  }
+
+  .info {
+    --font-size-local: var(--font-size-36);
+    --line-height-local: var(--line-height-120);
+
+    font-family: var(--font-family-serif);
+    font-size: var(--font-size-local);
+    line-height: var(--line-height-local);
+
+    h2:nth-of-type(1) {
+      margin-bottom: var(--space-24);
+    }
+
+    h2:nth-of-type(2) {
+      margin-bottom: var(--space-40);
+    }
+
+    .gradient {
+      background: linear-gradient(to left, #c06fff, #4690ff);
+      background-clip: text;
+      color: transparent;
+    }
+
+    .inline-img {
+      position: absolute;
+      display: inline-block;
+      height: calc(var(--font-size-local) * var(--line-height-local));
+    }
+
+    .inline-img img {
+      height: 100%;
+      width: auto;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-48) var(--space-40) var(--space-64) var(--space-40);
+    background-color: light-dark(var(--color-gray-100), oklch(0% 0 0 /12%));
+    box-shadow:
+      0 -2px 12px light-dark(oklch(0% 0 0 / 6%), oklch(0% 0 0 / 24%)),
+      0 -1px 4px light-dark(oklch(0% 0 0 / 8%), oklch(0% 0 0 / 36%));
+    border-top: 1px solid light-dark(var(--color-white), oklch(100% 0 0 / 6%));
+  }
+
+  .label {
+    margin-bottom: var(--space-20);
+    color: light-dark(var(--color-gray-500), var(--color-gray-400));
+  }
+
+  .links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-12);
+  }
+
+  .switchers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-12);
+  }
+
+  .icon-btn {
+    --color-icon_btn-icon: light-dark(
+      var(--color-gray-600),
+      var(--color-gray-400)
+    );
+
+    --color-icon_btn-icon-shadow: light-dark(
+      var(--color-gray-500),
+      var(--color-gray-950)
+    );
+
+    --color-icon_btn-bg: light-dark(
+      var(--color-gray-50),
+      var(--color-gray-700)
+    );
+
+    --color-icon_btn-shadow-1: light-dark(
+      var(--color-gray-200),
+      oklch(100% 0 0 / 8%)
+    );
+    --color-icon_btn-shadow-2: light-dark(
+      var(--color-gray-50),
+      oklch(100% 0 0 / 4%)
+    );
+    --color-icon_btn-shadow-3: light-dark(
+      var(--color-gray-50),
+      oklch(0% 0 0 / 60%)
+    );
+    --color-icon_btn-shadow-4: light-dark(
+      var(--color-gray-400),
+      oklch(0% 0 0 / 70%)
+    );
+    --color-icon_btn-shadow-5: light-dark(
+      oklch(0% 0 0 / 12%),
+      oklch(100% 0 0 / 4%)
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    padding: var(--space-8);
+    border-radius: var(--border-radius-16);
+    overflow: hidden;
+    color: var(--color-icon_btn-icon);
+    background: var(--color-icon_btn-bg);
+    box-shadow:
+      inset 0 0 6px 2px var(--color-icon_btn-shadow-1),
+      inset 0 -5px 6px var(--color-icon_btn-shadow-2),
+      inset 0 4px 10px var(--color-icon_btn-shadow-3),
+      inset 0 -7px 16px var(--color-icon_btn-shadow-4),
+      1px 4px 10px var(--color-icon_btn-shadow-5);
+  }
+
+  .icon {
+    display: flex;
+    justify-content: center;
+  }
+
+  .icon path {
+    filter: drop-shadow(0 4px 5px var(--color-icon_btn-icon-shadow));
+  }
+
+  :is(.icon-btn:hover, .active) {
+    --color-icon_btn-icon: light-dark(
+      oklch(var(--lightness-700) var(--chroma-700) var(--hue)),
+      oklch(var(--lightness-300) var(--chroma-300) var(--hue))
+    );
+
+    --color-icon_btn-icon-shadow: light-dark(
+      oklch(var(--lightness-500) var(--chroma-500) var(--hue)),
+      oklch(var(--lightness-950) var(--chroma-950) var(--hue))
+    );
+
+    --color-icon_btn-bg: light-dark(
+      oklch(var(--lightness-100) var(--chroma-100) var(--hue)),
+      oklch(var(--lightness-700) var(--chroma-700) var(--hue))
+    );
+
+    --color-icon_btn-shadow-1: light-dark(
+      oklch(var(--lightness-200) var(--chroma-200) var(--hue)),
+      oklch(var(--lightness-700) var(--chroma-700) var(--hue))
+    );
+    --color-icon_btn-shadow-2: light-dark(
+      var(--color-white),
+      oklch(var(--lightness-950) var(--chroma-950) var(--hue))
+    );
+    --color-icon_btn-shadow-3: light-dark(
+      oklch(var(--lightness-100) var(--chroma-100) var(--hue)),
+      oklch(var(--lightness-300) var(--chroma-300) var(--hue))
+    );
+    --color-icon_btn-shadow-4: light-dark(
+      oklch(var(--lightness-500) var(--chroma-500) var(--hue)),
+      oklch(var(--lightness-950) var(--chroma-950) var(--hue))
+    );
+    --color-icon_btn-shadow-5: light-dark(
+      oklch(var(--lightness-200) var(--chroma-200) var(--hue)),
+      oklch(var(--lightness-800) var(--chroma-800) var(--hue))
+    );
+  }
+
+  .icon-btn:has(> icon-dribbble):hover {
+    --hue: 350;
+  }
+  .icon-btn:has(> icon-reddit):hover {
+    --hue: 54;
+  }
+  .icon-btn:has(> icon-github):hover {
+    --hue: 290;
+  }
+  .icon-btn:has(> icon-mastodon):hover {
+    --hue: 278;
+  }
+  .icon-btn:has(> icon-sun):hover {
+    --hue: 94;
+  }
+  .icon-btn:has(> icon-moon):hover {
+    --hue: 280;
+  }
+
+  .active:has(> icon-sun) {
+    --hue: 94;
+  }
+  .active:has(> icon-moon) {
+    --hue: 280;
+  }
+}
+
+@supports not (background-color: oklch(from #fff l c h / 80%)) {
+  site-footer {
+    --color-footer-bg: light-dark(var(--color-gray-50), var(--color-gray-800));
+  }
+}

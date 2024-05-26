@@ -4,11 +4,11 @@ export default function SiteFoter({ html }) {
       <div class="info">
         <h2>
           Looking for beautiful and performant
-          <span class="gradient">templates</span> for your next or existing
+          <span class="gradient">Templates</span> for your next or existing
           venture ?
         </h2>
         <h2>
-          Have a look at KittyThemes
+          Have a look at KittyThemes<span>&numsp;</span>
           <span class="inline-img"
             ><img
               src="/_public/kitty-themes.webp"
@@ -23,14 +23,32 @@ export default function SiteFoter({ html }) {
       <div class="socials">
         <div class="label">My Socials</div>
         <div class="links">
-          <a role="button" class="icon-btn" target="_blank" href="https://dribbble.com/nrk9819"
+          <a
+            role="button"
+            class="icon-btn"
+            target="_blank"
+            href="https://dribbble.com/nrk9819"
             ><icon-dribbble class="icon"></icon-dribbble
           ></a>
-          <a role="button" class="icon-btn" target="_blank" href="https://www.reddit.com/user/nrkishere/"
+          <a
+            role="button"
+            class="icon-btn"
+            target="_blank"
+            href="https://www.reddit.com/user/nrkishere/"
             ><icon-reddit class="icon"></icon-reddit
           ></a>
-          <a role="button" class="icon-btn" target="_blank" href="https://github.com/nrk9819"><icon-github class="icon"></icon-github></a>
-          <a role="button" class="icon-btn" target="_blank" href=https://mastodon.social/@nrk9819"
+          <a
+            role="button"
+            class="icon-btn"
+            target="_blank"
+            href="https://github.com/nrk9819"
+            ><icon-github class="icon"></icon-github
+          ></a>
+          <a
+            role="button"
+            class="icon-btn"
+            target="_blank"
+            href="https://mastodon.social/@nrk9819"
             ><icon-mastodon class="icon"></icon-mastodon
           ></a>
         </div>
@@ -38,7 +56,12 @@ export default function SiteFoter({ html }) {
       <div class="theme">
         <div class="label">Theme</div>
         <div class="switchers">
-         
+          <button type="button" class="light icon-btn">
+            <icon-sun class="icon"></icon-sun>
+          </button>
+          <button type="button" class="dark icon-btn active">
+            <icon-moon class="icon"></icon-moon>
+          </button>
         </div>
       </div>
     </div>

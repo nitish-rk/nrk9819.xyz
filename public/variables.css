@@ -103,6 +103,6 @@
   --space-120: 120px;
   --space-140: 140px;
   --space-180: 180px;
-  --box-shadow-default: inset 0 0 0 1px light-dark(var(--color-white), var(--color-gray-800)), inset 0 4px 4px 0 light-dark(oklch(0% 0 0 / .05), oklch(0% 0 0 / .18)), inset 0 -14px 40px -20px light-dark(oklch(0% 0 0 / .12), oklch(0% 0 0 / .2)), 0 0 3px 0 light-dark(oklch(0% 0 0 / .12), oklch(0% 0 0 / .4));
+  --box-shadow-default: inset 0 0 0 1px light-dark(var(--color-white), var(--color-gray-800)), inset 0 4px 4px 0 light-dark(oklch(0% 0 0 / .05), oklch(0% 0 0 / .16)), inset 0 -2px 8px light-dark(oklch(0% 0 0 / .08), oklch(0% 0 0 / .3)), 0 2px 3px 0 light-dark(oklch(0% 0 0 / .12), oklch(0% 0 0 / .22));
   --box-shadow-floating: inset 0 0 0 1px light-dark(oklch(100% 0 0), oklch(100% 0 0 / .08)), 0 0 0 1px light-dark(oklch(0% 0 0 / .08), oklch(0% 0 0 / .4)), 0 16.08px 12px light-dark(oklch(0% 0 0 / .0188), oklch(0% 0 0 / .1237)), 0 9.02px 10.58px light-dark(oklch(0% 0 0 / .0167), oklch(0% 0 0 / .1067)), 0 4.79px 8.76px light-dark(oklch(0% 0 0 / .0167), oklch(0% 0 0 / .0872)), 0 1.99px 3.6px light-dark(oklch(0% 0 0 / .015), oklch(0% 0 0 / .0583));
 }

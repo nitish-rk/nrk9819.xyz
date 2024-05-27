@@ -55,13 +55,17 @@ export default function SiteFoter({ html }) {
       </div>
       <div class="theme">
         <div class="label">Theme</div>
-        <div class="switchers">
+        <div class="theme-switcher">
           <button type="button" class="light icon-btn">
             <icon-sun class="icon"></icon-sun>
           </button>
-          <button type="button" class="dark icon-btn active">
+          <button type="button" class="dark icon-btn">
             <icon-moon class="icon"></icon-moon>
           </button>
+          <load-script
+            src="/_public/browser/switch-theme.mjs"
+            load-on="idle"
+          ></load-script>
         </div>
       </div>
     </div>

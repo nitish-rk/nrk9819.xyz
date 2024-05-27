@@ -78,7 +78,7 @@ site-footer {
     gap: var(--space-12);
   }
 
-  .switchers {
+  .theme-switcher {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-12);
@@ -137,6 +137,7 @@ site-footer {
       inset 0 4px 10px var(--color-icon_btn-shadow-3),
       inset 0 -7px 16px var(--color-icon_btn-shadow-4),
       1px 4px 10px var(--color-icon_btn-shadow-5);
+    transition: all 0.5s ease;
   }
 
   .icon {

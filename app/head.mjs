@@ -11,6 +11,12 @@ export default function Head({ store }) {
   return `<!DOCTYPE html>
 <html lang="en">
     <head>
+      <!-- Script to set color theme -->
+      <script>
+        const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        const localTheme = localStorage.getItem('theme') ?? systemTheme;
+        document.documentElement.setAttribute('data-theme', localTheme);
+      </script>
       <!-- Global Metadata -->
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">

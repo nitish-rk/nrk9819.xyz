@@ -34,6 +34,8 @@ site-footer {
     }
 
     h2:nth-of-type(2) {
+      display: inline-flex;
+      flex-wrap: wrap;
       margin-bottom: var(--space-40);
     }
 
@@ -44,7 +46,6 @@ site-footer {
     }
 
     .inline-img {
-      position: absolute;
       display: inline-block;
       height: calc(var(--font-size-local) * var(--line-height-local));
     }
@@ -211,6 +212,34 @@ site-footer {
   }
   .active:has(> icon-moon) {
     --hue: 280;
+  }
+}
+
+@media (max-width: 576px) {
+  site-footer {
+    footer {
+      margin-bottom: var(--space-24);
+    }
+
+    .top {
+      padding: var(--space-64) var(--space-16);
+    }
+
+    .info {
+      --font-size-local: var(--font-size-30);
+      --line-height-local: var(--line-height-130);
+
+      h2:nth-of-type(2) {
+        margin-bottom: var(--space-32);
+      }
+    }
+
+    .bottom {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--space-40);
+      padding: var(--space-48) var(--space-16) var(--space-56);
+    }
   }
 }
 

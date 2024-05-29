@@ -1,0 +1,9 @@
+.inline-img {
+  display: inline-block;
+  height: calc(var(--font-size-local) * var(--line-height-local));
+}
+
+.inline-img img {
+  height: 100%;
+  width: auto;
+}

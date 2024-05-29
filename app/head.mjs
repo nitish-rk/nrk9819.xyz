@@ -40,9 +40,9 @@ export default function Head({ store }) {
       <meta name="twitter:image" content="${image}">
       <meta name="twitter:image:alt" content="${alt}">
       <!-- Styles -->
-      <link rel="stylesheet" href="/_public/global.css">
-      <link rel="stylesheet" href="/_public/variables.css">
-      <link rel="stylesheet" href="/_public/screen.css">
+      <link rel="stylesheet" href="/_public/css/global.css">
+      <link rel="stylesheet" href="/_public/css/variables.css">
+      <link rel="stylesheet" href="/_public/css/screen.css">
     </head>
 </html>`;
 }

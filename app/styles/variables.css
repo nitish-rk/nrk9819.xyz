@@ -106,6 +106,7 @@
   --space-120: 120px;
   --space-140: 140px;
   --space-180: 180px;
+  --space-240: 240px;
   --box-shadow-default: inset 0 0 0 1px
       light-dark(var(--color-white), var(--color-gray-800)),
     inset 0 4px 4px 0 light-dark(oklch(0% 0 0 / 5%), oklch(0% 0 0 / 16%)),

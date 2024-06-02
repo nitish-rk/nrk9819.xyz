@@ -1,4 +1,5 @@
 @import "./utils.css";
+@import "./variables.css";
 
 :root {
   color-scheme: light dark;

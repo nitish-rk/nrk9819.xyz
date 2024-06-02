@@ -11,6 +11,7 @@ export default async function Preflight({ req }) {
 function getPageData(path) {
   const data = {
     "/": {
+      page: "index",
       title: "NRK - web designer and developer",
       description:
         "NRK (nrk9819) is a web designer and developer based in Bhutan.",

@@ -1,6 +1,7 @@
 export default function Head({ store }) {
   const { metadata = {} } = store;
   const {
+    page = null,
     url = "https://nrk9819.xyz",
     title = "",
     description = "",
@@ -41,8 +42,8 @@ export default function Head({ store }) {
       <meta name="twitter:image:alt" content="${alt}">
       <!-- Styles -->
       <link rel="stylesheet" href="/_public/css/global.css">
-      <link rel="stylesheet" href="/_public/css/variables.css">
       <link rel="stylesheet" href="/_public/css/screen.css">
+      ${page && `<link rel="stylesheet" href="/_public/css/pages/${page}.css"`}
     </head>
 </html>`;
 }

@@ -1,3 +1,5 @@
 export default function ({ html }) {
-  return html`<site-layout>Hello</site-layout>`;
+  return html`<site-layout>
+    <section-landing-hero></section-landing-hero>
+  </site-layout>`;
 }

@@ -7,3 +7,10 @@
   height: 100%;
   width: auto;
 }
+
+.icon {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  aspect-ratio: 1;
+}

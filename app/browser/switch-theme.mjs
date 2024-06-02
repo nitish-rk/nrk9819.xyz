@@ -1,13 +1,13 @@
 const darkBtn = document.querySelector(".theme-switcher .dark");
 const lightBtn = document.querySelector(".theme-switcher .light");
 
-window.addEventListener("load", () => {
+function main() {
   const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
     ? "dark"
     : "light";
   const localTheme = localStorage.getItem("theme");
   localTheme === null ? setTheme(systemTheme) : setTheme(localTheme);
-});
+}
 
 function setTheme(theme) {
   const activeBtn = theme === "dark" ? darkBtn : lightBtn;
@@ -25,3 +25,5 @@ darkBtn.addEventListener("click", () => {
 lightBtn.addEventListener("click", () => {
   setTheme("light");
 });
+
+main();

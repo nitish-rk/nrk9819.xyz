@@ -1,1 +1,16 @@
-.inline-img{height:calc(var(--font-size-local)*var(--line-height-local));display:inline-block}.inline-img img{width:auto;height:100%}
+.inline-img {
+  height: calc(var(--font-size-local) * var(--line-height-local));
+  display: inline-block;
+}
+
+.inline-img img {
+  width: auto;
+  height: 100%;
+}
+
+.icon {
+  aspect-ratio: 1;
+  justify-content: center;
+  height: 100%;
+  display: flex;
+}

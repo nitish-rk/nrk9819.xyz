@@ -602,6 +602,19 @@ site-layout {
   }
 }
 
+@media (width <= 576px) {
+  site-layout {
+    & section {
+      margin-bottom: var(--space-48);
+      padding: 0 var(--space-16);
+    }
+
+    & section:first-of-type {
+      margin-top: calc((var(--space-12)  + var(--space-56)) * -1);
+    }
+  }
+}
+
 @font-face {
   font-family: "ZT Bros Oskon 90s";
   src: local("ZT Bros Oskon 90s"), url("/_public/ztbrososkon90s-regular.otf") format("opentype");

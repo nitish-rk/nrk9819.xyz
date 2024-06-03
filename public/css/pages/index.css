@@ -11,6 +11,7 @@ section-landing-hero {
     --font-size-local: var(--font-size-48);
     --line-height-local: var(--line-height-120);
     flex-wrap: wrap;
+    align-items: flex-end;
     display: inline-flex;
   }
 
@@ -188,14 +189,16 @@ section-landing-hero {
     gap: var(--space-48);
     flex-direction: column;
     display: flex;
+    container: work / inline-size;
   }
 
   & .skills {
     gap: var(--space-24);
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     display: grid;
 
     & .card {
+      padding: var(--space-24);
       cursor: pointer;
       background-color: light-dark(var(--color-gray-100), var(--color-gray-900));
       color: var(--color-icon);
@@ -206,7 +209,6 @@ section-landing-hero {
       --color-card-glow: light-dark(oklch(0% 0 0 / .36), oklch(100% 0 0 / .16));
       justify-content: center;
       align-items: center;
-      padding: 24px;
       display: flex;
       position: relative;
       overflow: hidden;
@@ -371,6 +373,71 @@ section-landing-hero {
 
     & .monitor .typing:after {
       animation: none;
+    }
+  }
+}
+
+@media (width <= 576px) {
+  section-landing-hero {
+    & section {
+      padding-top: var(--space-180);
+    }
+
+    & h1, & h2 {
+      --font-size-local: var(--font-size-36);
+      --line-height-local: var(--line-height-140);
+    }
+
+    & .stack {
+      & .card {
+        border-radius: var(--border-radius-16);
+      }
+    }
+
+    & .monitor {
+      border-radius: var(--border-radius-12);
+      height: 54px;
+
+      & .bevel {
+        border-radius: var(--border-radius-12);
+        height: 38px;
+      }
+
+      & .screen {
+        border-radius: var(--border-radius-12);
+        width: 90%;
+        height: 85%;
+      }
+
+      & .text {
+        font-size: 8.4px;
+      }
+    }
+  }
+}
+
+@container work (width <= 480px) {
+  section-landing-hero {
+    & .skills {
+      gap: var(--space-20);
+      grid-template-columns: repeat(3, 1fr);
+
+      & .card {
+        padding: 6cqw;
+      }
+    }
+  }
+}
+
+@container work (width <= 340px) {
+  section-landing-hero {
+    & .skills {
+      gap: var(--space-16);
+      grid-template-columns: repeat(2, 1fr);
+
+      & .card {
+        padding: 8cqw;
+      }
     }
   }
 }

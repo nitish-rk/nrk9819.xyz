@@ -10,6 +10,7 @@ section-landing-hero {
     --line-height-local: var(--line-height-120);
     display: inline-flex;
     flex-wrap: wrap;
+    align-items: flex-end;
     margin-bottom: var(--space-20);
     font-family: var(--font-family-serif);
     font-size: var(--font-size-local);
@@ -205,6 +206,8 @@ section-landing-hero {
   }
 
   .work {
+    container-type: inline-size;
+    container-name: work;
     padding-top: var(--space-64);
     display: flex;
     flex-direction: column;
@@ -213,7 +216,7 @@ section-landing-hero {
 
   .skills {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: var(--space-24);
 
     .card {
@@ -225,7 +228,7 @@ section-landing-hero {
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 24px;
+      padding: var(--space-24);
       cursor: pointer;
       background-color: light-dark(
         var(--color-gray-100),
@@ -462,6 +465,72 @@ section-landing-hero {
 
     .monitor .typing::after {
       animation: none;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  section-landing-hero {
+    section {
+      padding-top: var(--space-180);
+    }
+
+    h1,
+    h2 {
+      --font-size-local: var(--font-size-36);
+      --line-height-local: var(--line-height-140);
+    }
+
+    .stack {
+      .card {
+        border-radius: var(--border-radius-16);
+      }
+    }
+
+    .monitor {
+      height: 54px;
+      border-radius: var(--border-radius-12);
+
+      .bevel {
+        height: 38px;
+        border-radius: var(--border-radius-12);
+      }
+
+      .screen {
+        height: 85%;
+        width: 90%;
+        border-radius: var(--border-radius-12);
+      }
+
+      .text {
+        font-size: 8.4px;
+      }
+    }
+  }
+}
+
+@container work (max-width: 480px) {
+  section-landing-hero {
+    .skills {
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-20);
+
+      .card {
+        padding: 6cqw;
+      }
+    }
+  }
+}
+
+@container work (max-width: 340px) {
+  section-landing-hero {
+    .skills {
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--space-16);
+
+      .card {
+        padding: 8cqw;
+      }
     }
   }
 }
